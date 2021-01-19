@@ -1,0 +1,5 @@
+buy shovel
+get car
+dig hole
+plant seed
+drive away

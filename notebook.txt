@@ -3,3 +3,6 @@ get car
 dig hole
 plant seed
 drive away
+do facepalm
+drive back
+water plant

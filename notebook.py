@@ -1,15 +1,15 @@
 # Notebook
 filename = "notebook.txt"
 while True:
-    print("(1) Read the notebook")
-    print("(2) Add note")
-    print("(3) Empty the notebook")
-    print("(4) Quit\n")
-    selection = input("Please select one:")
+    print("1 - Read the notebook")
+    print("2 - Add a note")
+    print("3 - Erase the notebook")
+    print("4 - Quit\n")
+    selection = input("Please select one of the above:")
     if selection.isdigit():
         selection = int(selection)
     else:
-        print("Not a number")
+        print("Please select a number (1-4)!")
         continue
     if selection == 1:
         file = open(filename, "r")
@@ -26,9 +26,9 @@ while True:
     elif selection == 3:
         file = open(filename, "w")
         file.close()
-        print("Notes deleted.")
+        print("All notes were deleted.")
     elif selection == 4:
-        print("Notebook shutting down, thank you.")
+        print("Exiting the notebook, good bye.")
         break
     else:
         print("Incorrect selection")
